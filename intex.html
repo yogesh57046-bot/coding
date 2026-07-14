@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Jamuna ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Anti-gravity background canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="container">
+        <!-- PAGE 1: SECURITY GATE -->
+        <div id="login-card" class="card">
+            <h2>Welcome, M.Jamuna</h2>
+            <p class="subtitle">Only my heart's owner can enter here.</p>
+            
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Enter your name...">
+            </div>
+            
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter password...">
+            </div>
+            
+            <button onclick="checkCredentials()">Unlock My Heart</button>
+            <p id="error" class="error-msg">Incorrect credentials, try again love! ❤️</p>
+        </div>
+
+        <!-- PAGE 2: LOVE DASHBOARD -->
+        <div id="dashboard-card" class="card hidden">
+            <h2>I Love You, Jamuna! 💖</h2>
+            <p class="subtitle">Every second spent thinking of you is a treasure.</p>
+            
+            <div class="quotes-container" id="quotes-box">
+                <!-- Quotes will load here via JavaScript -->
+            </div>
+
+            <button onclick="logout()" class="lock-btn">Lock Page</button>
+        </div>
+    </div>
+
+    <script href="script.js" src="script.js"></script>
+</body>
+</html>
